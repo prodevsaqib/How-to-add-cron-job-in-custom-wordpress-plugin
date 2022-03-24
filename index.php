@@ -1,7 +1,7 @@
 //add this function in plugin constructor, so that when plugin get activated, job should be scheduled
 
 if( !wp_next_scheduled( 'mycronjob' ) ) {  
-			   wp_schedule_event( time(), 'everyhalf', 'cronjob' );  
+ wp_schedule_event( time(), 'everyhalf', 'cronjob' );  
 }	
       
 
